@@ -1,4 +1,6 @@
-/* DDL untuk schema bronze */
+/* DDL untuk schema bronze 
+Metode yang dipakai adalah cek jika ada tabel yang dimaksud, maka tabel di hapus dan dibuat ulang lagi
+*/
 
 if OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL
 	Drop Table bronze.crm_cust_info;
