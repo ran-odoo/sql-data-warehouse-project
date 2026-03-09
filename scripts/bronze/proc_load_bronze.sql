@@ -1,5 +1,5 @@
 /*
-Ini adalah stored procedure, untuk melakukan load data pada layer bronze.
+Ini adalah stored procedure, untuk melakukan load data dari source pada layer bronze.
 sesuai dengan requirement awal, setiap kali loading, semua data yang ada akan dibuang dulu dan load kembali
 data dari file terkait.
 untuk setiap proses loading komponen data dari folder ERP ataupun CRM diberikan timer untuk mengukur seberapa lama 
