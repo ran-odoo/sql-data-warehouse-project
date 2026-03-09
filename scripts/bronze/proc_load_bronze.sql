@@ -1,10 +1,14 @@
 /*
-Ini addalah stored procedure, untuk melakukan load data pada layer bronze.
+Ini adalah stored procedure, untuk melakukan load data pada layer bronze.
 sesuai dengan requirement awal, setiap kali loading, semua data yang ada akan dibuang dulu dan load kembali
 data dari file terkait.
 untuk setiap proses loading komponen data dari folder ERP ataupun CRM diberikan timer untuk mengukur seberapa lama 
 waktu muat dari file terkait.
 juga dilengkapi dengan timer untuk menghitung total waktu yang dibutuhkan untuk memuat semua data dari awal hingga akhir.
+
+Prosedur ini tidak mengunakan paramater sama sekali, cara pakai setelah dieksekusi, dan tersimpan di dalam database.
+
+EXEC bronze.load_bronze;
 */
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
